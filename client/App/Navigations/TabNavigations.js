@@ -6,6 +6,8 @@ import Fav from '../Screens/Fav';
 import Search from '../Screens/Search';
 import Profile from '../Screens/Profile';
 import{Ionicons, AntDesign, Feather, Fontisto} from '@expo/vector-icons';
+import Login from '../Screens/Login';
+import Registre from '../Screens/Registre';
 
 
 export default function TabNavigations() {
@@ -20,7 +22,7 @@ export default function TabNavigations() {
         )
       }}
       />
-      <Tab.Screen name="Fav" component={Fav} 
+      <Tab.Screen name="Fav" component={Login} 
       options={{
         tabBarLabel:'Fav',
         tabBarIcon:({color , size})=>(
@@ -28,7 +30,7 @@ export default function TabNavigations() {
         )
       }}
       />
-      <Tab.Screen name="Search" component={Search}
+      <Tab.Screen name="Search" component={Registre}
       options={{
         tabBarLabel:'Search',
         tabBarIcon:({color , size})=>(

@@ -10,8 +10,10 @@ export default function Header() {
       justifyContent:'space-between',
       gap:10,
       alignItems:'center',
+      height: Dimensions.get('screen').height*0.05,
+      backgroundColor:Colors.darkBlue
     }}>
-      <Image source={require ('./../../../assets/logo_sight_white.png')}
+      <Image source={require ('./../../../assets/IEEE/logo_sight_white.png')}
         style={styles.logoSight}
       />
       <View>
@@ -21,7 +23,7 @@ export default function Header() {
           style={styles.searchBar}
         />
       </View>
-      <Image source={require('./../../../assets/IEEEWhiteColor.png')} style={styles.logoIEEE}/>
+      <Image source={require('./../../../assets/IEEE/IEEEWhiteColor.png')} style={styles.logoIEEE}/>
     </View>
   )
 }
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
   logoSight:{
     resizeMode: 'stretch',
     width: Dimensions.get('screen').width*0.16,
-    height: 30,
+    height: Dimensions.get('screen').height*0.05
   },
   background:{
     backgroundColor:Colors.darkBlue
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
   logoIEEE:{
     resizeMode: 'stretch',
     width: Dimensions.get('screen').width*0.13,
-    height: 30,
+    height: Dimensions.get('screen').height*0.05
   },
   searchBar:{
     borderWidth:1,
@@ -46,8 +48,8 @@ const styles = StyleSheet.create({
     padding:4,
     borderRadius:50,
     paddingLeft:10,
-    width: Dimensions.get('screen').width*0.6,
-    height: 30,
+    width: Dimensions.get('screen').width*0.65,
+    height: Dimensions.get('screen').height*0.04
   },
   userImage:{
     width:50,
