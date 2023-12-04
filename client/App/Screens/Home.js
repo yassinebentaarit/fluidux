@@ -11,13 +11,13 @@ export default function Home() {
       <View style={styles.background}>
       </View>
           
-            </View>
+    </View>
   )
 }
 const styles = StyleSheet.create({
   background:{
     padding:10,
-    backgroundColor: Colors.lightBlue,
+    backgroundColor: Colors.blue,
     height:900,
     width:900
     
